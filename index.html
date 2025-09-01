@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Course</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            gap: 30px 30px;
+            justify-content: center;
+            background-color: brown;
+            padding: 16px;
+           font-weight: bold;
+           transition: 0.3s;
+           border: 1px solid white;
+        }
+        nav a:hover { color: #00c3ff; }
+        nav a{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        h2{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .hero{
+            background-image: url("https://www.thoughtco.com/thmb/_navsB8AKyewTbGbgBqUemHsPVM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-138710922-596be61a5f9b582c35768e34.jpg");
+            background-size: cover;
+            height: 94.1vh;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.6;
+            margin-top: 50px;
+            padding: 20px;
+            font-style: italic;
+            
+         }
+        .hero h1{
+            font-size: 3rem;
+            text-align: center;
+            background-color: aliceblue;
+        }
+        .hero h2{
+            font-size: 2rem;
+            text-align: center;
+            background-color: aliceblue;
+            
+        }
+        .hero p { 
+            font-size: 1.2rem; 
+            text-align: center;
+            background-color: aliceblue;
+        }
+        .hero button{
+             position: relative;
+             top: 50%;
+             left: 45%;
+             cursor: pointer;
+        }
+        .section h2 { margin-bottom: 20px; font-size: 2rem; padding: 50px; margin-top: 50px;}
+        .cards {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           gap: 20px;
+        }
+        .card {
+           background: #f4f4f4;
+           padding: 20px;
+           border-radius: 10px;
+           width: 300px;
+           box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+           transition: 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); }
+        .card button{
+            padding: 8px;
+            cursor: pointer;
+        }
+        .card button:hover{ background: #008bb5;}
+        .testimonial {
+           background: brown;
+           color: white;
+           padding: 40px 20px;
+           text-align: center;
+           margin-top: 50px;
+        }
+        .testimonial p { font-style: italic; padding: 20px;  }
+        .contact form {
+           max-width: 500px;
+           margin: auto;
+           display: flex;
+           flex-direction: column;
+           gap: 15px;
+        }
+        .contact input, .contact textarea {
+           padding: 10px;
+           border: 1px solid #ccc;
+           border-radius: 5px;
+        }
+        .contact button {
+            background: #00c3ff;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact button:hover { background: #008bb5; }
+        footer {
+          background: brown;
+          color: white;
+          text-align: center;
+          padding: 20px;
+          margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+      <section class="hero">
+        <h1>EduCourse</h>
+        <h2>Learn Anytime, Anywhere</h2>
+        <p>Join our online courses and build your future today</p>
+        <button style="background-color: maroon; color: white; padding: 10px; border-radius: 8px; ">Enroll Now</button>
+      </section>
+
+      <section class="section" id="about" style="height: 650px;">
+       <h2>Why Choose Us?</h2>
+        <div class="cards">
+          <div class="card">
+           <h3>Expert Teachers</h3>
+           <p>Learn from industry professionals with years of experience.</p>
+           <img src="https://tse3.mm.bing.net/th/id/OIP.p_bitZwbxMGO3sdKztiXVgHaFj?pid=Api&P=0&h=180" alt="">
+          </div>
+        <div class="card">
+           <h3>Flexible Learning</h3>
+           <p>Study at your own pace with our online resources.</p>
+           <img src="https://tse3.mm.bing.net/th/id/OIP.QloBGQKpGEGSDvdfGfwr0gHaE8?pid=Api&P=0&h=180" alt="">
+        </div>
+      <div class="card">
+        <h3>Certification</h3>
+        <p>Get recognized certificates after successful course completion.</p>
+        <img src="https://support.thecn.com/hc/article_attachments/360060125034/customized_certificate.jpg" alt="" style="height: 200px;">
+      </div>
+    </div>
+  </section>
+  <section class="section" id="courses">
+    <h2>Our Popular Courses</h2>
+   <div class="cards">
+    <div class="card"><h3>Web Development</h3>
+        <p>Learn HTML, CSS, JS, and modern frameworks.</p>
+        <img src="https://www.news-reporter.com/wp-content/uploads/2023/04/Future-Of-Web-Development-1-scaled.webp" alt="" style="height: 150px; padding: 10px;">
+        <button>Enroll</button>
+    </div>
+    <div class="card"><h3>Data Science</h3>
+        <p>Master Python, Machine Learning, and AI.</p>
+        <img src="https://tse1.mm.bing.net/th/id/OIP.50Oa2rj6MA7MO8gp-koLJwHaEw?pid=Api&P=0&h=180" alt="" style="height: 170px; padding: 10px;">
+        <button>Enroll</button>
+    </div>
+    <div class="card"><h3>Digital Marketing</h3>
+        <p>Grow your business with SEO, Ads, and Analytics.</p>
+        <img src="https://www.phoenixmedia.co.th/wp-content/uploads/2021/03/digital-marketing.jpg" alt="" style="height: 170px; padding: 10px;">
+        <button>Enroll</button>
+    </div>
+    <div class="card"><h3>UI/UX Design</h3>
+       <p>Learn to create stunning, user-friendly interfaces that keep users engaged.</p>
+       <img src="https://pixelstreet.in/blog/wp-content/uploads/2022/10/UI-UX-DESIGN-scaled.jpg" alt="" style="height: 170px; padding: 10px;">
+       <button>Enroll</button>
+    </div>
+    <div class="card"><h3>App Development</h3>
+       <p>Build real-world apps from scratch using modern development tools and techniques.</p>
+       <img src="https://tse1.mm.bing.net/th/id/OIP.Uzt0zjeEw69M43hcToEiTwHaD5?pid=Api&P=0&h=180" alt="" style="height: 150px; padding: 10px;">
+       <button>Enroll</button>
+    </div>
+    <div class="card"><h3>Cyber Security</h3>
+        <p>Master the skills to protect systems, data, and networks from cyber threats.</p>
+        <img src="https://tse3.mm.bing.net/th/id/OIP.O2QLJZJ4zt7H-ZINYEmH7gHaDq?pid=Api&P=0&h=180" alt="" style="height: 140px; padding: 5px;">
+        <button>Enroll</button>
+    </div>
+    <div class="card"><h3>Game Development</h3>
+        <p>Design and develop engaging games with cutting-edge tools.</p>
+        <img src="https://soject.com/wp-content/uploads/2020/11/The-steps-of-game-developing.jpg" alt="" style="height: 150px; padding: 5px;">
+        <button>Enroll</button>
+    </div>
+    <div class="card"><h3>Artifical Intelligence</h3>
+        <p>Explore AI concepts and build intelligent applications.</p>
+        <img src="https://tse4.mm.bing.net/th/id/OIP.6gjJ_tRjWed5PK4QnbQA3wHaE8?pid=Api&P=0&h=180" alt="" style="height: 170px; padding: 10px;">
+        <button>Enroll</button>
+    </div>
+   </div>
+  </section>
+  <section class="testimonial" id="testimonials" style="height: 700px;margin-top: 50px;">
+    <div class="test">
+      <h2>What Our Students Say</h2>
+      <p>"This platform changed my career. The courses are amazing!"</p>
+      <p>- Alex Johnson</p>
+    </div>
+    <div class="test">
+        <p>"The Web Development Bootcamp was easy to follow and projects-based.I build my portfolio while learning."</p>
+        <p>- Priya Sharma</p>
+    </div>
+    <div class>
+        <p>"I never thought online learning could be this engaging. The teachers are supportive and the content is world-class."</p>
+        <p>- Daniel Lee</p>
+    </div>
+  </section>
+  <section class="section contact" id="contact" style="height: 600px;">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+ </main>
+    <footer>&copy;Educourse All right reserved</footer>
+  <script>
+    window.addEventListener("scroll", function(){
+      document.getElementById("navbar").classList.toggle("scrolled", window.scrollY > 50);
+    });
+  </script>
+</body>
+</html>
